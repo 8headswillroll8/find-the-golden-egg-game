@@ -40,6 +40,7 @@ easterEggs.forEach(function (egg) {
       backgroundColor.classList.add("bg__color--winner");
       clickedEgg.src = "assets/golden-egg.svg";
       btn.classList.remove("is-hidden");
+      egg.classList.add("game__item--glow");
 
       easterEggs.forEach(function (egg) {
         if (egg !== winningEgg) {

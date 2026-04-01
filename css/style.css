@@ -11,7 +11,7 @@ body {
 }
 
 .bg__color--winner {
-  background-color: #f6eec4;
+  background-color: #f8f3d5;
 }
 
 h1 {
@@ -46,6 +46,11 @@ p {
   height: 100%;
   filter: drop-shadow(0 15px 8px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
+}
+
+.game__item--glow {
+  filter: drop-shadow(0 0 10px rgba(255, 200, 0, 0.8))
+    drop-shadow(0 0 20px rgba(255, 180, 0, 0.6));
 }
 
 .game__item--dim {
