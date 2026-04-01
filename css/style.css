@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f8f6eb;
+}
+
+.bg__color--winner {
+  background-color: #f6eec4;
+}
+
+h1 {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  margin: 25px 0;
+  color: #333333;
+}
+
+p {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.game__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+.game__item {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 15px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.game__item--dim {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.game__item:not(.game__item--dim):hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  appearance: none;
+}
+
+.btn {
+  height: 62px;
+  width: 216px;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  margin-top: 25px;
+}
+
+.btn:hover {
+  color: #f8f6eb;
+  background-color: #333333;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 393px) {
+  .game__grid {
+    grid-template-columns: repeat(3, 100px);
+    gap: 2.8rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .game__grid {
+    gap: 3.8rem;
+  }
+
+  .btn {
+    margin-top: 45px;
+  }
+}
