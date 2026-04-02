@@ -109,7 +109,6 @@ button {
 
 @media (min-width: 393px) {
   .game__grid {
-    grid-template-columns: repeat(3, 120px);
     justify-content: center;
     gap: 2rem;
   }
@@ -120,6 +119,10 @@ button {
 }
 
 @media (min-width: 768px) {
+  .game__grid {
+    grid-template-columns: repeat(3, 120px);
+  }
+
   .btn {
     margin-top: 45px;
   }
