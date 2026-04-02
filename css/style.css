@@ -48,8 +48,10 @@ p {
 /* === Eggs === */
 
 .game__item {
-  width: 100%;
-  overflow: visible; /* lets shadow and glow extend outside the grid cell */
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
   filter: drop-shadow(0 15px 8px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
 }
