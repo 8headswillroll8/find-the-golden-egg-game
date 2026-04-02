@@ -42,16 +42,17 @@ p {
 .game__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
 }
 
 /* === Eggs === */
 
 .game__item {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
+  padding: 20px 20px;
+  box-sizing: border-box;
   filter: drop-shadow(0 15px 8px rgba(0, 0, 0, 0.2));
   transition: transform 0.3s ease;
 }
@@ -106,8 +107,7 @@ button {
 
 @media (min-width: 393px) {
   .game__grid {
-    grid-template-columns: repeat(3, 100px);
-    gap: 2.8rem;
+    grid-template-columns: repeat(3, 120px);
     justify-content: center;
   }
 
@@ -117,10 +117,6 @@ button {
 }
 
 @media (min-width: 768px) {
-  .game__grid {
-    gap: 3.8rem;
-  }
-
   .btn {
     margin-top: 45px;
   }
